@@ -1,0 +1,412 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- PAGE HEADING -->
+<div class="impx-page-heading uk-position-relative room-detail">
+    <div class="impx-overlay dark"></div>
+    <div class="uk-container">
+        <div class="uk-width-1-1">
+            <div class="uk-flex uk-flex-left">
+                <div class="uk-light uk-position-relative uk-text-left page-title">
+                    <h1 class="uk-margin-remove">{{ room_category }}</h1><!-- page title -->
+                    <p class="impx-text-large uk-margin-remove">Browse &amp; Choose Your Choice</p><!-- page subtitle -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PAGE HEADING END -->
+
+<!-- CONTENT -->
+<div class="uk-padding vert uk-padding-remove-horizontal">
+    <div class="uk-container">
+        <div data-uk-grid>
+
+            <div class="uk-width-1-1 uk-margin-medium-top">
+                <!-- slider -->
+                <div class="impx-room-slider">
+                    <div class="uk-position-relative" data-uk-slideshow="animation: fade">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="images/rooms/room-detail-1.jpg" alt="" data-uk-cover>
+                                <div class="impx-overlay"></div>
+                            </li>
+                            <li>
+                                <img src="images/rooms/room-detail-2.jpg" alt="" data-uk-cover>
+                                <div class="impx-overlay"></div>
+                            </li>
+                            <li>
+                                <img src="images/rooms/room-detail-3.jpg" alt="" data-uk-cover>
+                                <div class="impx-overlay"></div>
+                            </li>
+                            <li>
+                                <img src="images/rooms/room-detail-4.jpg" alt="" data-uk-cover>
+                                <div class="impx-overlay"></div>
+                            </li>
+                            <li>
+                                <img src="images/rooms/room-detail-5.jpg" alt="" data-uk-cover>
+                                <div class="impx-overlay"></div>
+                            </li>
+                        </ul>
+                        <!-- slider thumb nav -->
+                        <div class="uk-position-center-left uk-position-medium">
+                            <ul class="uk-thumbnav uk-thumbnav-vertical">
+                                <li data-uk-slideshow-item="0"><a href="#"><img src="images/rooms/room-detail-1.jpg" width="120" alt=""></a></li>
+                                <li data-uk-slideshow-item="1"><a href="#"><img src="images/rooms/room-detail-2.jpg" width="120" alt=""></a></li>
+                                <li data-uk-slideshow-item="2"><a href="#"><img src="images/rooms/room-detail-3.jpg" width="120" alt=""></a></li>
+                                <li data-uk-slideshow-item="3"><a href="#"><img src="images/rooms/room-detail-4.jpg" width="120" alt=""></a></li>
+                                <li data-uk-slideshow-item="4"><a href="#"><img src="images/rooms/room-detail-5.jpg" width="120" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <!-- slider thumb nav end -->
+                    </div>
+                </div>
+                <!-- slider end -->
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="uk-width-2-3@xl uk-width-2-3@l uk-width-2-3@m uk-width-1-1@s">
+                <!-- highlight -->
+                <ul class="uk-child-width-1-3@xl uk-child-width-1-3@l uk-child-width-1-2@m uk-child-width-1-2@s uk-grid-medium uk-grid-match" data-uk-grid>
+                    <li class="uk-text-center">
+                        <div class="uk-card uk-card-default uk-card-body impx-padding-medium"><!-- highlight item #1 -->
+                            <i class="fa fa-wifi fa-2x impx-text-aqua"></i>
+                            <h6 class="uk-margin-remove-bottom uk-margin-small-top">Free Wi-fi</h6>
+                            <p class="uk-margin-remove-bottom uk-margin-small-top">Ergo hoc quidem apparet agendum esse natos. Quam tu ponis in verbis ego</p>
+                        </div>
+                    </li><!-- highlight item #1 end -->
+                    <li class="uk-text-center"><!-- highlight item #2 -->
+                        <div class="uk-card uk-card-default uk-card-body impx-padding-medium">
+                            <i class="fa fa-bathtub fa-2x impx-text-aqua"></i>
+                            <h6 class="uk-margin-remove-bottom uk-margin-small-top">Bathtub</h6>
+                            <p class="uk-margin-remove-bottom uk-margin-small-top">Ergo hoc quidem apparet agendum esse natos. Quam tu ponis in verbis ego</p>
+                        </div>
+                    </li><!-- highlight item #2 end -->
+                    <li class="uk-text-center"><!-- highlight item #3 -->
+                        <div class="uk-card uk-card-default uk-card-body impx-padding-medium">
+                            <i class="fa fa-tv fa-2x impx-text-aqua"></i>
+                            <h6 class="uk-margin-remove-bottom uk-margin-small-top">Widescreen TV</h6>
+                            <p class="uk-margin-remove-bottom uk-margin-small-top">Ergo hoc quidem apparet agendum esse natos. Quam tu ponis in verbis ego</p>
+                        </div>
+                    </li><!-- highlight item #3 end -->
+                    <li class="uk-text-center"><!-- highlight item #4 -->
+                        <div class="uk-card uk-card-default uk-card-body impx-padding-medium">
+                            <i class="fa fa-heart-o fa-2x impx-text-aqua"></i>
+                            <h6 class="uk-margin-remove-bottom uk-margin-small-top">Gym Studio</h6>
+                            <p class="uk-margin-remove-bottom uk-margin-small-top">Ergo hoc quidem apparet agendum esse natos. Quam tu ponis in verbis ego</p>
+                        </div>
+                    </li><!-- highlight item #4 end -->
+                    <li class="uk-text-center"><!-- highlight item #5 -->
+                        <div class="uk-card uk-card-default uk-card-body impx-padding-medium">
+                            <i class="fa fa-child fa-2x impx-text-aqua"></i>
+                            <h6 class="uk-margin-remove-bottom uk-margin-small-top">Kids Playground</h6>
+                            <p class="uk-margin-remove-bottom uk-margin-small-top">Ergo hoc quidem apparet agendum esse natos. Quam tu ponis in verbis ego</p>
+                        </div>
+                    </li><!-- highlight item #5 end -->
+                    <li class="uk-text-center"><!-- highlight item #6 -->
+                        <div class="uk-card uk-card-default uk-card-body impx-padding-medium">
+                            <i class="fa fa-coffee fa-2x impx-text-aqua"></i>
+                            <h6 class="uk-margin-remove-bottom uk-margin-small-top">Mini Cafe</h6>
+                            <p class="uk-margin-remove-bottom uk-margin-small-top">Ergo hoc quidem apparet agendum esse natos. Quam tu ponis in verbis ego</p>
+                        </div>
+                    </li><!-- highlight item #6 end -->
+                </ul>
+                <!-- highlight end -->
+
+                <!-- room description -->
+                <h4>Room Description</h4>
+                <p class="impx-text-large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Omnes enim iucundum motum, quo sensus hilaretur. Duo enim genera quae erant, fecit tria. Audax negotium, impudens, translatum philosophos nostros esset.cum plane perdidiceriti constructio vero primum in eo ipso parum  modo optimum.</p>
+
+                <p class="uk-margin-medium-bottom">Unum est sine dolore esse, alterum cum voluptate. Non risu potius quam oratione eiciendum? Mihi enim satis est, ipsis non satis. Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Qui non moveatur et offensione turpitudinis et comprobatione honestatis? Quae cum essent dicta, discessimus. Omnes enim iucundum motum, quo sensus hilaretur. Quamquam te quidem video minime esse deterritum Nos paucis ad haec additis finem faciamus.</p>
+
+                <!-- room features list -->
+                <div data-uk-grid>
+                    <div class="uk-width-1-2@xl uk-width-1-2@l uk-width-1-2@m uk-width-1-2@s">
+                        <h5>Additional Description</h5>
+                        <p>Nihil opus est exemplis hoc facere longius. Quid de Platone aut de Democrito loquar? Voluptatem cum summum bonum diceret, primum in eo ipso parum vidit, deinde hoc quoque alienum; Quo modo autem optimum, si bonum nullum est?</p>
+                    </div>
+                    <div class="uk-width-1-2@xl uk-width-1-2@l uk-width-1-2@m uk-width-1-2@s">
+                        <h5>More Facilities</h5>
+                        <ul class="uk-list uk-list-bullet impx-list">
+                            <li>Nihil opus est exemplis hoc facere longius</li>
+                            <li>Voluptatem cum summum bonum diceret</li>
+                            <li>Quo modo autem optimum, si bonum</li>
+                            <li>Beatus autem esse in maximarum</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="uk-divider-icon">
+
+                <!-- Review -->
+                <div class="impx-reviews-section">
+
+                    <div class="uk-card uk-card-default uk-margin-medium-bottom">
+                        <!-- Review comment -->
+                        <div class="uk-card-body impx-padding-medium">
+                            <h4 class="uk-margin-medium-bottom uk-heading-bullet uk-heading-line"><span>Reviews &amp; Comments</span></h4>
+
+                            <ul class="uk-comment-list">
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header uk-position-relative">
+                                            <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <img class="uk-comment-avatar" src="images/peoples/testi-people1.jpg" width="80" height="80" alt="">
+                                                </div>
+                                                <div class="uk-width-expand">
+                                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top uk-margin-small-bottom">
+                                                        <li>
+                                                            <select id="review-rating1">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>									                
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header uk-position-relative">
+                                            <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <img class="uk-comment-avatar" src="images/peoples/testi-people2.jpg" width="80" height="80" alt="">
+                                                </div>
+                                                <div class="uk-width-expand">
+                                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top uk-margin-small-bottom">
+                                                        <li>
+                                                            <select id="review-rating2">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="uk-comment">
+                                        <header class="uk-comment-header uk-position-relative">
+                                            <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <img class="uk-comment-avatar" src="images/peoples/testi-people3.jpg" width="80" height="80" alt="">
+                                                </div>
+                                                <div class="uk-width-expand">
+                                                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top uk-margin-small-bottom">
+                                                        <li>
+                                                            <select id="review-rating3">
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <div class="uk-comment-body">
+                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- review comment end -->
+                </div>
+
+                <!-- Review form -->
+                <div class="uk-card uk-card-default uk-margin-medium-bottom">
+                    <div class="uk-card-body impx-padding-medium">
+                        <h4 class="uk-margin-medium-bottom uk-heading-bullet uk-heading-line"><span>Add Your Review</span></h4>
+                        <form>
+                            <fieldset class="uk-fieldset">
+
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="text" placeholder="Name">
+                                </div>
+                                <div class="uk-margin">
+                                    <input class="uk-input" type="text" placeholder="Email">
+                                </div>
+
+                                <div class="uk-margin">
+                                    <label class="uk-form-label" for="review-rating-opt">Rating</label>
+                                    <select id="review-rating-opt">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+
+                                <div class="uk-margin">
+                                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                                </div>
+                                <div class="uk-margin">
+                                    <button class="uk-button impx-button aqua">Submit</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <!-- Review form end -->
+            </div>
+            <!-- MAIN CONTENT -->
+
+            <!-- SIDEBAR -->
+            <div class="uk-width-1-3@xl uk-width-1-3@l uk-width-1-3@m uk-width-1-1@s">
+                <!-- booking form -->
+                <div class="bg-color-aqua uk-padding impx-padding-medium uk-margin-medium-bottom uk-box-shadow-medium">
+
+                    <div class="impx-hp-booking-form side-form uk-margin-bottom uk-margin-remove-top ">
+                        <h6 class="uk-heading-line uk-text-center uk-light uk-text-uppercase"><span>Booking Form</span></h6>
+                        <form id="booking-form" class="" action="." method="POST">
+                            {% csrf_token %}
+                            <div class="uk-margin">
+                            </div>
+                            <div class="uk-margin">
+                                <div class="uk-form-controls">
+                                    <div class="uk-inline">
+                                        <label id="id_check_in" class="uk-form-label">Arrival</label>
+                                        <span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
+                                        <input id="id_check_in" class="uk-input booking-arrival uk-border-rounded" type="text" name="check_in" placeholder="m/dd/yyyy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <div class="uk-form-controls">
+                                    <div class="uk-inline">
+                                        <label id="id_check_out" class="uk-form-label">Departure</label>
+                                        <span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
+                                        <input id="id_check_out" class="uk-input booking-departure uk-border-rounded" name="check_out" type="text" placeholder="m/dd/yyyy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="uk-form-label empty-label">&nbsp;</label>
+                                <a href="">
+                                    <button class="uk-button uk-width-1-1">Book Now!</button>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- booking form -->
+                </div>
+                <!-- SIDEBAR END -->
+
+                <!-- related rooms -->
+                <div class="uk-margin-large-bottom uk-padding impx-padding-medium bg-color-white uk-box-shadow-medium related-rooms">
+                    <h4 class="uk-heading-line uk-text-center">Other Rooms</h4><!-- title -->
+                    <!-- room items -->
+                    <ul class="uk-child-width-1-1@xl uk-child-width-1-1@l uk-child-width-1-1@m uk-child-width-1-3@s impx-rooms style3 uk-margin-small-top uk-margin-remove-bottom data-uk-grid" data-uk-grid>
+                        <li><!-- room item #1 -->
+                            <a href="room-detail.html" class="uk-inline-clip uk-transition-toggle">
+                                <div class="uk-card uk-card-default uk-box-shadow-large uk-box-shadow-hover-xlarge impx-service-card other-item bg-color-aqua">
+                                    <div class="uk-card-media-top">
+                                        <div class="uk-position-relative">
+                                            <img src="images/rooms/room-1.jpg" alt="">
+                                            <div class="impx-overlay light overlay-squared padding-xwide"></div>
+                                        </div>
+                                        <div class="uk-card-body impx-padding-small uk-position-relative uk-position-z-index">
+                                            <h4 class="uk-card-title uk-margin-remove-bottom impx-text-white">Single Room</h4>
+                                            <div class="uk-card-badge uk-label bg-color-gold impx-text-white small">start from $33</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary impx-overlay aqua-darkest">
+                                        <p class="impx-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum</p>
+                                        <ul class="uk-list room-fac impx-text-white">
+                                            <li><span class="impx-text-white" data-uk-icon="icon: check; ratio: 1;"></span> Beatus in maximarum timore</li>
+                                            <li><span class="impx-text-white" data-uk-icon="icon: check; ratio: 1;"></span> Oculis Compensabatur</li>
+                                            <li><span class="impx-text-white" data-uk-icon="icon: check; ratio: 1;"></span> Dolorisnos veriusque nihil</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li><!-- room item #1 end -->
+                        <li><!-- room item #2 -->
+                            <a href="room-detail.html" class="uk-inline-clip uk-transition-toggle">
+                                <div class="uk-card uk-card-default uk-box-shadow-large uk-box-shadow-hover-xlarge impx-service-card other-item bg-color-aqua">
+                                    <div class="uk-card-media-top">
+                                        <div class="uk-position-relative">
+                                            <img src="images/rooms/room-5.jpg" alt="">
+                                            <div class="impx-overlay light overlay-squared padding-xwide"></div>
+                                        </div>
+                                        <div class="uk-card-body impx-padding-small uk-position-relative uk-position-z-index">
+                                            <h4 class="uk-card-title uk-margin-remove-bottom impx-text-white">Single Room</h4>
+                                            <div class="uk-card-badge uk-label bg-color-gold impx-text-white small">start from $33</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary impx-overlay aqua-darkest">
+                                        <p class="impx-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum</p>
+                                        <ul class="uk-list room-fac impx-text-white">
+                                            <li><span class="impx-text-white" data-uk-icon="icon: check; ratio: 1;"></span> Beatus in maximarum timore</li>
+                                            <li><span class="impx-text-white" data-uk-icon="icon: check; ratio: 1;"></span> Oculis Compensabatur</li>
+                                            <li><span class="impx-text-white" data-uk-icon="icon: check; ratio: 1;"></span> Dolorisnos veriusque nihil</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li><!-- room item #2 end -->
+                        <li class="uk-margin-remove-bottom"><!-- room item #3 -->
+                            <a href="room-detail.html" class="uk-inline-clip uk-transition-toggle">
+                                <div class="uk-card uk-card-default uk-box-shadow-large uk-box-shadow-hover-xlarge impx-service-card other-item bg-color-aqua">
+                                    <div class="uk-card-media-top uk-light">
+                                        <div class="uk-position-relative">
+                                            <img src="images/rooms/room-3.jpg" alt="">
+                                            <div class="impx-overlay light overlay-squared padding-xwide"></div>
+                                        </div>
+                                        <div class="uk-card-body impx-padding-small uk-position-relative uk-position-z-index">
+                                            <h4 class="uk-card-title uk-margin-remove-bottom impx-text-white">Single Room</h4>
+                                            <div class="uk-card-badge uk-label bg-color-gold impx-text-white small">start from $33</div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary impx-overlay aqua-darkest">
+                                        <p class="impx-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Si verbum sequimur, primum longius verbum praepositum quam bonum</p>
+                                        <ul class="uk-list room-fac impx-text-white">
+                                            <li><span class="impx-text-white" data-uk-icon="icon: check; ratio: 1;"></span> Beatus in maximarum timore</li>
+                                            <li><span class="impx-text-white" data-uk-icon="icon: check; ratio: 1;"></span> Oculis Compensabatur</li>
+                                            <li><span class="impx-text-white" data-uk-icon="icon: check; ratio: 1;"></span> Dolorisnos veriusque nihil</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li><!-- room item #3 end -->
+                    </ul>
+                <!-- related rooms end -->
+
+            </div>
+
+        </div>
+    </div>
+</div>	
+</div>					
+<!-- CONTENT END -->
+
+{% endblock %}
