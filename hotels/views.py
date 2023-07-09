@@ -2,11 +2,11 @@ from typing import Any
 from django.db.models.query import QuerySet
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.views.generic import ListView, FormView, View
+from django.views.generic import ListView, FormView, View, DeleteView
 from .models import *
 from .forms import AvailableForm
 from booking_functions.availability import check_availability
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 # Create your views here.
 
 def RoomListView(request):
@@ -24,7 +24,7 @@ def RoomListView(request):
     }
     return render(request, 'hotel/room_list.html', context)
     
-class BookingList(ListView):
+class BookingListView(ListView):
     model = Booking
     template_name = 'hotel/book_list.html'
     def get_queryset(self, *args, **kwargs):
@@ -109,4 +109,8 @@ class BookingView(FormView):
             return HttpResponse("All of These category of rooms are booked, try another one")
         
                 
-        
+
+class CancelRoomView(DeleteView):
+    model = Booking
+    template_name = 'hotel/booking_confirm_delete.html'
+    success_url = reverse_lazy('hotel:Booking_List')       
